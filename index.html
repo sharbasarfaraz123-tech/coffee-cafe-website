@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Brew Haven Café</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Brew Haven</div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+            <a href="#cart">
+                🛒 Cart <span id="cart-count">(0)</span>
+            </a>
+        </li>
+
+        <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1>Fresh Coffee, Better Moments</h1>
+
+                <p>
+                    Enjoy freshly brewed coffee, delicious snacks,
+                    and a warm café experience.
+                </p>
+
+                <a href="#menu" class="btn">Explore Menu</a>
+            </div>
+        </section>
+
+        <section id="menu" class="section">
+            <h2>Our Menu</h2>
+
+            <div class="menu-container">
+
+                <div class="menu-card">
+                        <img src="Image/espresso.jpg" alt="Espresso">
+
+                    <h3>Espresso</h3>
+
+                    <p>Strong and rich coffee made from freshly ground beans.</p>
+                    
+                    <span>₹120</span>
+
+                    <div class="menu-cart-control"
+     data-name="Espresso"
+     data-price="120">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+                <div class="menu-card">
+                         <img src="Image/cappuccino.jpg" alt="cappuccino">
+
+                    <h3>Cappuccino</h3>
+
+                    <p>A perfect blend of espresso, steamed milk, and foam.</p>
+
+                    <span>₹180</span>
+
+                    <div class="menu-cart-control"
+     data-name="Cappuccino"
+     data-price="180">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+                <div class="menu-card">
+                         <img src="image/coldcoffee.jpg" alt="Cold Coffee">
+
+                    <h3>Cold Coffee</h3>
+
+                    <p>Chilled coffee served with milk and creamy foam.</p>
+
+                    <span>₹200</span>
+
+                     <div class="menu-cart-control"
+     data-name="Cold Coffee"
+     data-price="200">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+                <div class="menu-card">
+                         <img src="image/chocolate-muffins.jpg" alt="Chocolate Muffin">
+
+                    <h3>Chocolate Muffin</h3>
+
+                    <p>Soft and delicious muffin filled with chocolate flavour.</p>
+
+                    <span>₹100</span>
+
+                     <div class="menu-cart-control"
+     data-name="Chocolate Muffin"
+     data-price="100">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+                <div class="menu-card">
+                                             <img src="image/vegsandwich.jpg" alt="Veg Sandwich">
+
+                    <h3>Veg Sandwich</h3>
+
+                    <p>Fresh vegetables and cheese served in toasted bread.</p>
+
+                    <span>₹150</span>
+
+                     <div class="menu-cart-control"
+     data-name="Veg Sandwich"
+     data-price="150">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+                <div class="menu-card">
+                                                                 <img src="image/frenchfries.jpg" alt="French Fries">
+
+                    <h3>French Fries</h3>
+
+                    <p>Crispy golden fries served with tomato ketchup.</p>
+
+                    <span>₹130</span>
+
+                     <div class="menu-cart-control"
+     data-name="French Fries"
+     data-price="130">
+
+    <button type="button" class="add-cart-btn">
+        Add to Cart
+    </button>
+
+    <div class="menu-quantity-control">
+        <button type="button" class="menu-minus">−</button>
+        <span class="menu-quantity">0</span>
+        <button type="button" class="menu-plus">+</button>
+    </div>
+
+</div>
+                </div>
+
+            </div>
+        </section>
+
+        <div class="menu-card">
+    <img src="Image/cappuccino.jpg" alt="Cappuccino">
+    <h3>Cappuccino</h3>
+    <p>A perfect blend of espresso, steamed milk, and foam.</p>
+    <span>₹180</span>
+
+    <button class="add-cart-btn"
+        data-name="Cappuccino"
+        data-price="180">
+        Add to Cart
+    </button>
+</div>
+
+<!-- End of Menu Section -->
+</section>
+
+<!-- Paste the Cart Section HERE -->
+<section id="cart" class="section cart-section">
+
+    <h2>Your Cart</h2>
+
+    <div id="cart-items">
+        <p>Your cart is empty.</p>
+    </div>
+
+    <div class="bill-details">
+        <p>Subtotal: <span id="subtotal">₹0</span></p>
+        <p>GST (5%): <span id="gst">₹0</span></p>
+        <p>Delivery Charge: <span id="delivery-charge">₹0</span></p>
+
+        <h3>Total Bill: <span id="grand-total">₹0</span></h3>
+    </div>
+
+    <div class="payment-section">
+        <h3>Select Payment Method</h3>
+
+        <label><input type="radio" name="payment" value="Cash on Delivery"> Cash on Delivery</label>
+
+        <label><input type="radio" name="payment" value="UPI"> UPI</label>
+
+        <label><input type="radio" name="payment" value="Card"> Debit/Credit Card</label>
+
+        <button id="place-order-btn">Place Order</button>
+
+        <p id="order-message"></p>
+    </div>
+
+</section>
+
+<!-- About Section starts here -->
+<section id="about">
+
+        <section id="about" class="section about">
+            <h2>About Us</h2>
+
+            <p>
+                Brew Haven Café is a cosy place created for coffee lovers.
+                We serve freshly prepared beverages and snacks in a friendly
+                and relaxing environment. Our goal is to provide quality food,
+                excellent service, and a memorable experience for every customer.
+            </p>
+        </section>
+
+        <section id="contact" class="section contact">
+            <h2>Contact Us</h2>
+
+            <form id="contactForm">
+
+                <label for="name">Name</label>
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required
+                >
+
+                <label for="email">Email</label>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required
+                >
+
+                <label for="message">Message</label>
+                <textarea
+                    id="message"
+                    rows="5"
+                    placeholder="Write your message"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn">
+                    Send Message
+                </button>
+
+                <p id="formMessage"></p>
+
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 Brew Haven Café. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
