@@ -190,6 +190,31 @@ function removeItem(index) {
     updateCart();
 }
 
+function updateCartCount() {
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = `(${totalItems})`;
+}
+
+function syncMenuQuantityButtons() {
+    document.querySelectorAll(".menu-cart-control").forEach((control) => {
+        const addButton = control.querySelector(".add-cart-btn");
+        const quantityBox = control.querySelector(".menu-quantity-control");
+        const quantityText = control.querySelector(".menu-quantity");
+        const itemName = control.dataset.name;
+        const item = cart.find((cartItem) => cartItem.name === itemName);
+
+        if (item) {
+            addButton.style.display = "none";
+            quantityBox.style.display = "inline-flex";
+            quantityText.textContent = item.quantity;
+        } else {
+            addButton.style.display = "inline-block";
+            quantityBox.style.display = "none";
+            quantityText.textContent = "0";
+        }
+    });
+}
+
 function updateCart() {
     cartItemsContainer.innerHTML = "";
 
@@ -205,21 +230,7 @@ function updateCart() {
         cartItem.classList.add("cart-item");
 
         cartItem.innerHTML = `
-        cartItem.querySelector(".plus").addEventListener("click", () => {
-    cart[index].quantity++;
-    updateCart();
-});
 
-cartItem.querySelector(".minus").addEventListener("click", () => {
-    if (cart[index].quantity > 1) {
-        cart[index].quantity--;
-    } else {
-        cart.splice(index, 1);
-    }
-
-    updateCart();
-});
-cartItemsContainer.appendChild(cartItem);
             <div>
                 <strong>${item.name}</strong>
 <p>Price: ₹${item.price}</p>
@@ -253,6 +264,8 @@ Quantity:
         cartItemsContainer.appendChild(cartItem);
     });
 
+    updateCartCount();
+    syncMenuQuantityButtons();
     calculateBill();
 }
 
